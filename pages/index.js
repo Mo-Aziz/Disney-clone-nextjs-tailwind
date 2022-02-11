@@ -1,5 +1,6 @@
 import { getSession, useSession } from 'next-auth/react';
 import Head from 'next/head'
+import Brands from '../components/Brands';
 import Header from '../components/Header'
 import Hero from "../components/Hero"
 import Slider from '../components/Slider';
@@ -17,6 +18,7 @@ export default function Home() {
       <Header />
       {/* {!session ? <Hero/> :(<main>App</main>)} */}
       <Slider/>
+      <Brands/>
     </div>
   )
 }
