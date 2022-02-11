@@ -2,9 +2,10 @@ import { getSession, useSession } from 'next-auth/react';
 import Head from 'next/head'
 import Header from '../components/Header'
 import Hero from "../components/Hero"
+import Slider from '../components/Slider';
 
-export default function Home({session}) {
-  // const { data: session } = useSession()
+export default function Home() {
+  const { data: session } = useSession()
   return (
     <div className=" ">
       <Head>
@@ -14,7 +15,8 @@ export default function Home({session}) {
       
 
       <Header />
-      {!session ? <Hero/> :<main>App</main>}
+      {/* {!session ? <Hero/> :(<main>App</main>)} */}
+      <Slider/>
     </div>
   )
 }

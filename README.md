@@ -7,3 +7,5 @@
 #### Next-auth
 
 #### firebase for google authentication.
+
+####  react-responsive-carousel
